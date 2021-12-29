@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { Router } from '@angular/router';
-import { UserService } from 'src/app/Services/User/user.service';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +12,7 @@ export class LoginComponent implements OnInit {
   submitted = false;
   hide: boolean = true;
 
-  constructor(private router: Router, private formBuilder: FormBuilder, private userservice: UserService, private snackBar: MatSnackBar) { }
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -95,3 +92,6 @@ export class LoginComponent implements OnInit {
   //   }
   // }
 }
+
+
+
