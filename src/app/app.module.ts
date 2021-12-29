@@ -15,12 +15,17 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import { ForgotPasswordComponent } from './Components/forgot-password/forgot-password.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { ProfileComponent } from './Components/profile/profile.component';
+import { HomepageComponent } from './Components/homepage/homepage.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    ProfileComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatSnackBarModule,
     MatIconModule,
     MatDividerModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

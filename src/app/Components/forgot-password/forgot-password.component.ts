@@ -22,7 +22,6 @@ oncreateaccount() {
   this.router.navigateByUrl('/login')
 }
 onSubmit(){
-
 }
 
 }
