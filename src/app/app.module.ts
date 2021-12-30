@@ -18,6 +18,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { ProfileComponent } from './Components/profile/profile.component';
 import { HomepageComponent } from './Components/homepage/homepage.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { GetcartComponent } from './Components/getcart/getcart.component';
+import { GetwishlistComponent } from './Components/getwishlist/getwishlist.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import {MatMenuModule} from '@angular/material/menu';
     LoginComponent,
     ForgotPasswordComponent,
     ProfileComponent,
-    HomepageComponent
+    HomepageComponent,
+    GetcartComponent,
+    GetwishlistComponent
   ],
   imports: [
     BrowserModule,

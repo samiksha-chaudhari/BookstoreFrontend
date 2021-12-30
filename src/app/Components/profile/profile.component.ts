@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -11,7 +12,7 @@ export class ProfileComponent implements OnInit {
   cancelbutton:boolean=false
   editbutton:boolean=true
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -28,6 +29,9 @@ export class ProfileComponent implements OnInit {
     this.editbutton=true
     this.savebutton=false
     this.disableTextbox = !this.disableTextbox;
+  }
+  onhome() {
+    this.router.navigateByUrl('/homepage')
   }
 
 }

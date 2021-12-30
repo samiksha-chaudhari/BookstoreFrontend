@@ -19,7 +19,7 @@ export class HomepageComponent implements OnInit {
   }
 
   onWishList() {
-    this.router.navigateByUrl('/homepage')
+    this.router.navigateByUrl('/wishlist')
   }
 
   oncart(){
@@ -30,7 +30,7 @@ export class HomepageComponent implements OnInit {
     this.router.navigateByUrl('/login');
   }
   onprofile(){
-    this.router.navigateByUrl('/homepage/profile')
+    this.router.navigateByUrl('/profile')
   }
 
 }
