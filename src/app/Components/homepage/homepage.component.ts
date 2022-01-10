@@ -19,18 +19,22 @@ export class HomepageComponent implements OnInit {
   }
 
   onWishList() {
-    this.router.navigateByUrl('/wishlist')
+    this.router.navigateByUrl('/homepage/wishlist')
+  }
+
+  onOrder() {
+    this.router.navigateByUrl('homepage/getorder')
   }
 
   oncart(){
-    this.router.navigateByUrl('/homepage')
+    this.router.navigateByUrl('/homepage/cart')
   }
   logout() {
     localStorage.removeItem('token');
     this.router.navigateByUrl('/login');
   }
   onprofile(){
-    this.router.navigateByUrl('/profile')
+    this.router.navigateByUrl('/homepage/profile')
   }
 
 }

@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  BaseUrl:'https://bookstore.incubation.bridgelabz.com'
+  //BaseUrl:'https://bookstore.incubation.bridgelabz.com'
+  BaseUrl:'https://localhost:44354/api'
 };
 
 /*

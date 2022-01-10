@@ -20,6 +20,17 @@ import { HomepageComponent } from './Components/homepage/homepage.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { GetcartComponent } from './Components/getcart/getcart.component';
 import { GetwishlistComponent } from './Components/getwishlist/getwishlist.component';
+import { BookviewComponent } from './Components/bookview/bookview.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatDialogModule} from '@angular/material/dialog';
+import { GetAllBookComponent } from './Components/get-all-book/get-all-book.component';
+import { AuthguardServiceService } from './Services/AuthguardServices/authguard-service.service';
+import { FooterComponent } from './Components/footer/footer.component';
+import {MatSelectModule} from '@angular/material/select';
+import { PlaceorderComponent } from './Components/placeorder/placeorder.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatRadioModule} from '@angular/material/radio';
+import { GetorderComponent } from './Components/getOrder/getorder/getorder.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +40,12 @@ import { GetwishlistComponent } from './Components/getwishlist/getwishlist.compo
     ProfileComponent,
     HomepageComponent,
     GetcartComponent,
-    GetwishlistComponent
+    GetwishlistComponent,
+    BookviewComponent,
+    GetAllBookComponent,
+    FooterComponent,
+    PlaceorderComponent,
+    GetorderComponent
   ],
   imports: [
     BrowserModule,
@@ -46,9 +62,14 @@ import { GetwishlistComponent } from './Components/getwishlist/getwishlist.compo
     MatIconModule,
     MatDividerModule,
     MatToolbarModule,
-    MatMenuModule
+    MatMenuModule,
+    HttpClientModule,
+    MatDialogModule,
+    MatSelectModule,MatExpansionModule,MatRadioModule
   ],
-  providers: [],
+  providers: [
+    AuthguardServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

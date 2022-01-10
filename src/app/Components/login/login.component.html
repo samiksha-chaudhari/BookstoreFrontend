@@ -13,7 +13,7 @@
                <div fxLayout="row" fxLayoutAlign="space-evenly start" style="margin-top:-89px;">
                    <mat-tab-group>
                        <mat-tab label="LOGIN">
-                           <form [formGroup]="loginForm"  fxLayout="column" fxLayoutAlign="start start">
+                           <form [formGroup]="loginForm" (ngSubmit)="onLogin()" fxLayout="column" fxLayoutAlign="start start">
 
                                <div>
                                    <span>Email id</span>
@@ -96,7 +96,7 @@
                                    </div>
                                </div>
                            </form>
-                           <button  class="loginbutton" style="color: white;">Signup</button>
+                           <button (click)="onSignup()" class="loginbutton" style="color: white;">Signup</button>
                        </mat-tab>
                    </mat-tab-group>
                </div>
